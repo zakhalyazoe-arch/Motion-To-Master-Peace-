@@ -106,23 +106,28 @@
             <p>Recommendations? email me at</p>
             <a href="mailto:zakhalyazoe@gmail.com<">Email Me</a>
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div.scroll-container {
-  background-color: #333;
-  overflow-x: auto; /* Specifically allow horizontal scrolling */
-  overflow-y: hidden; /* Hide vertical scroll */
-  white-space: nowrap; /* Forces images to stay in one long line */
-  padding: 10px;
-  width: 100%; /* Makes sure the container spans the page */
-}
+<div class="scroll-container">
+  <img src="https://www.w3schools.com/howto/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+  <img src="https://www.w3schools.com/howto/img_forest.jpg" alt="Forest" width="600" height="400">
+  <img src="https://www.w3schools.com/howto/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  <img src="https://www.w3schools.com/howto/img_mountains.jpg" alt="Mountains" width="600" height="400">
+</div>
 
-div.scroll-container img {
-  padding: 10px;
-  display: inline-block; /* Essential to keep them side-by-side */
-  vertical-align: top;
-}
+<style>
+  /* This CSS goes inside your existing style or right here */
+  .scroll-container {
+    background-color: #333;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    width: 100%; 
+    border-radius: 5px;
+  }
+
+  .scroll-container img {
+    padding: 10px;
+    display: inline-block;
+  }
 </style>
 </head>
 <body>
