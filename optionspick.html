@@ -109,11 +109,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-div.scroll-container {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
+div.scroll-container img {
   padding: 10px;
+  height: 400px; /* Forces a consistent height */
+  width: auto;   /* Keeps the image from stretching/looking weird */
 }
 
 div.scroll-container img {
@@ -127,10 +126,10 @@ div.scroll-container img {
 <p>Use the horizontal scrollbar to see the other images.</p>
 
 <div class="scroll-container">
-  <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-  <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-  <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-  <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  <img src="https://www.w3schools.com/howto/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+  <img src="https://www.w3schools.com/howto/img_forest.jpg" alt="Forest" width="600" height="400">
+  <img src="https://www.w3schools.com/howto/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  <img src="https://www.w3schools.com/howto/img_mountains.jpg" alt="Mountains" width="600" height="400">
 </div>
 
 <p>Note that the images are of same size.</p>
