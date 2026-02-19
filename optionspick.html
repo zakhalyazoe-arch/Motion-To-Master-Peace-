@@ -109,14 +109,20 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-div.scroll-container img {
+<style>
+div.scroll-container {
+  background-color: #333;
+  overflow-x: auto; /* Specifically allow horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scroll */
+  white-space: nowrap; /* Forces images to stay in one long line */
   padding: 10px;
-  height: 400px; /* Forces a consistent height */
-  width: auto;   /* Keeps the image from stretching/looking weird */
+  width: 100%; /* Makes sure the container spans the page */
 }
 
 div.scroll-container img {
   padding: 10px;
+  display: inline-block; /* Essential to keep them side-by-side */
+  vertical-align: top;
 }
 </style>
 </head>
