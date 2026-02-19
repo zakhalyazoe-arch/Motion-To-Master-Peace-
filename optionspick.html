@@ -108,101 +108,114 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Arial;
-  margin: 0;
-}
 
-* {
-  box-sizing: border-box;
-}
+<style>
+  /* Center the whole gallery */
+  .container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+  }
 
-img {
-  vertical-align: middle;
-}
+  /* Hide images by default */
+  .mySlides {
+    display: none;
+  }
 
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
+  .mySlides img {
+    width: 100%;
+    border-radius: 8px;
+  }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
+  /* Next & prev buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.3);
+  }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+  /* Caption and Thumbnails */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    color: white;
+  }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+  .column {
+    float: left;
+    width: 16.66%;
+  }
 
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
+  .demo {
+    opacity: 0.6;
+    width: 100%;
+    cursor: pointer;
+  }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  .active, .demo:hover {
+    opacity: 1;
+  }
+</style>
 
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
+<div class="container">
+  <h2 style="text-align:center">Slideshow Gallery</h2>
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img_woods_wide.jpg">
+  </div>
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img_5terre_wide.jpg">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img_woods_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_5terre_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    </div>
+</div>
+
+
+
+  
+
 </style>
 <body>
 
