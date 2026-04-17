@@ -115,6 +115,27 @@
             margin-top: 20px; /* Separates it from the content above */
             border: 1px solid #ccc;
         }
+
+       .nav-controls {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    align-items: center;
+    justify-content: center;
+    min-width: 200px; /* Ensures the container size stays constant */
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-weight: bold;
+    color: #8B0000;
+    padding: 5px 10px;
+    border: 1px solid transparent; /* Prevents layout shift on hover */
+}
+
+/* Optional: Add a hover effect so users know they are clickable */
+.nav-btn:hover {
+    color: #ff0066;
+}
     </style>
 </head>
 <body>
@@ -122,9 +143,14 @@
 <div class="page-content">
     <div class="top-row">
         <h1 class="great-gatsby-title">Great Gatsby</h1>
+
+      <div class="nav-controls">
+        <a href="Damsel.html" class="nav-btn">Back</a>
+    </div>
+
+      
         <div class="rating-box">
             <p>Movie Rating</p>
-           <a href="Strangerthings.html">Next Drawing</a>
             <div class="stars">★★★☆☆</div> 
             <a href="optionspick.html">Back to Movie lists</a>
           
