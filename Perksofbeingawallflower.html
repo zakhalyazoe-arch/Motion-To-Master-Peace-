@@ -105,6 +105,27 @@
             margin-top: 20px; /* Separates it from the content above */
             border: 1px solid #ccc;
         }
+
+        .nav-controls {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    align-items: center;
+    justify-content: center;
+    min-width: 200px; /* Ensures the container size stays constant */
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-weight: bold;
+    color: #8B0000;
+    padding: 5px 10px;
+    border: 1px solid transparent; /* Prevents layout shift on hover */
+}
+
+/* Optional: Add a hover effect so users know they are clickable */
+.nav-btn:hover {
+    color: #ff0066;
+}
     </style>
 </head>
 <body>
@@ -112,8 +133,12 @@
 <div class="page-content">
     <div class="top-row">
         <h1 class="Wallflower-title">Perks Of Being A Wallflower</h1>
-      <a href="10thingsihateabtu.html">Back</a>
-      <a href="Howtoloseaguyin10days.html">Next Drawing</a>
+
+      <div class="nav-controls">
+        <a href="10thingsihateabtu.html" class="nav-btn">Back</a>
+        <a href="Howtoloseaguyin10days.html" class="nav-btn">Next Drawing</a>
+    </div>
+      
         <div class="rating-box">
             <p>Movie Rating</p>
             <div class="stars">★★★★☆</div> 
