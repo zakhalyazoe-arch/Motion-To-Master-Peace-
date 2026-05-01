@@ -23,3 +23,38 @@
 
 </body>
 </html>
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        /* This keeps your content centered */
+        justify-content: center; 
+        /* This fills the whole screen so no black space shows */
+        background-color: #000; 
+        height: 100vh;
+    }
+
+    .side-panel {
+        width: 200px; /* Adjust this to change how wide the images are */
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Put your images here */
+    .left-image { background-image: url('YOUR_LEFT_IMAGE_URL'); }
+    .right-image { background-image: url('YOUR_RIGHT_IMAGE_URL'); }
+
+    .main-content {
+        max-width: 800px;
+        background: white;
+        overflow-y: auto;
+    }
+</style>
+
+<body>
+    <div class="side-panel left-image"></div>
+    <div class="main-content">
+        </div>
+    <div class="side-panel right-image"></div>
+</body>
