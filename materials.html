@@ -2,87 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Artistic Materials</title>
     <style>
-        /* Base Page Setup */
         body {
-            background-color: #fdfaf6; /* A soft paper-like color */
-            margin: 0;
+            background-color: #e0e0e0; /* Gray background to make the "page" pop */
             display: flex;
             justify-content: center;
-            padding: 20px;
-        }
-
-        /* The Brocure Wrapper */
-        .brochure {
-            display: grid;
-            grid-template-columns: repeat(3, 300px); /* Sets the 3 fixed panels */
-            gap: 20px;
-            background: white;
             padding: 40px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
 
-        /* Each Panel */
-        .panel {
-            padding: 20px;
-            border-left: 1px solid #eee;
+        /* This fixes the page size to mimic a brochure panel */
+        .page {
+            width: 850px; /* Standard letter-width equivalent */
+            background-color: white;
+            padding: 50px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Creates the "page" effect */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
         }
 
-        /* Typography */
-        h2 {
-            font-family: 'Georgia', serif;
-            text-transform: uppercase;
-            font-size: 1.5rem;
-            color: #2c2c2c;
-            margin-top: 0;
-        }
-
-        p {
-            font-family: 'Arial', sans-serif;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            color: #444;
-        }
-
-        /* Placeholder for your images */
-        .image-placeholder {
-            width: 100%;
-            height: 150px;
-            background-color: #eee;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            border: 2px dashed #ccc;
-        }
+        h2 { text-transform: uppercase; border-bottom: 2px solid #333; }
+        
+        /* Ensures images stay within their specific columns */
+        img { width: 100%; height: auto; border-radius: 5px; }
     </style>
 </head>
 <body>
 
-<div class="brochure">
-    <div class="panel">
-        <div class="image-placeholder">[Insert Pencil Image]</div>
+<div class="page">
+    <section>
+        <img src="your-pencil-image.jpg" alt="Pencils">
         <h2>I Use</h2>
         <p>On my videos, most of the time it looks like I’m just using a normal mechanical pencil. But off-camera, I use a lot more.</p>
-        <p>When we are talking about pencils, it really depends on what I’m drawing or just simply preference...</p>
-    </div>
+    </section>
 
-    <div class="panel">
-        <div class="image-placeholder">[Insert Pens Image]</div>
+    <section>
+        <img src="your-pen-image.jpg" alt="Pens">
         <h2>Matirials</h2>
         <p>Looking at some of these images you might be thinking why I use so many of the same pencils and pens. Well, they are actually different.</p>
-        <p>For pens, it’s kind of the same; I personally like fine point pens, but ballpoint pens are also good...</p>
-    </div>
+    </section>
 
-    <div class="panel">
-        <div class="image-placeholder">[Insert Sketch Image]</div>
+    <section>
+        <img src="your-sketch-image.jpg" alt="Drawing">
         <h2>Draw</h2>
-        <p>This is very important when I’m sketching and drawing the full image to make parts of the drawings stand out.</p>
         <p>Mastering the balance between different lead types and pen thicknesses is key to creating depth and clarity in every piece I create.</p>
-    </div>
+    </section>
 </div>
 
 </body>
