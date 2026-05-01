@@ -1,66 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materials & Drawing</title>
     <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f9f9f9;
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevents scrollbars if the image fits perfectly */
         }
-        header {
-            text-align: center;
-            padding-bottom: 40px;
-            border-bottom: 2px solid #ddd;
-            margin-bottom: 40px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        section {
-            margin-bottom: 40px;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .content-box p {
-            margin-bottom: 15px;
+
+        .full-page-image {
+            width: 100vw;    /* 100% of the viewport width */
+            height: 100vh;   /* 100% of the viewport height */
+            object-fit: contain; /* Keeps the aspect ratio so it doesn't get squished */
+            background-color: #f0f0f0; /* Color for any extra space */
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Artistic Materials & Technique</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Materials</h2>
-            <p>Looking at some of these images you might be thinking why I use so many of the same pencils and pens. Well, they are actually different.</p>
-            <p>On my videos, most of the time it looks like I’m just using a normal mechanical pencil. But off-camera, I use a lot more.</p>
-        </section>
-
-        <section>
-            <h2>The Tools I Use</h2>
-            <p>When we are talking about pencils, it really depends on what I’m drawing or just simply preference. Different wooden and mechanical pencils have different graphite or lead grades. This basically means the pencil shows up darker or lighter. This is very important when I’m sketching and drawing the full image to make parts of the drawings stand out.</p>
-            <p>For pens, it’s kind of the same; I personally like fine point pens, but ballpoint pens are also good. The pens have different thicknesses. I usually use the pens after I’m done sketching the drawing out to make my final outline.</p>
-        </section>
-
-        <section>
-            <h2>Draw</h2>
-            <p>Mastering the balance between different lead types and pen thicknesses is key to creating depth and clarity in every piece I create.</p>
-        </section>
-    </main>
+    <img src="https://codehs.com/uploads/314a9e0f4cc5073e715433ff84f13f8d" class="full-page-image" alt="Matirials">
 
 </body>
 </html>
