@@ -14,12 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* Prevents scrollbars if the image fits perfectly */
-        }
+       body, html {
+             margin: 0;
+             padding: 0;
+             height: 100%;
+  /* Remove overflow: hidden; */
+}
 
         .full-page-image {
             width: 100vw;    /* 100% of the viewport width */
@@ -29,16 +29,19 @@
         }
       
        .back-button {
-           display: inline-block; /* Makes it respect sizing */
-           padding: 10px 20px;    /* Makes the button bigger */
-           background-color: #ddd; /* Add a background color to see the shape */
-           text-decoration: none;  /* Removes the underline */
-           color: black;           /* Sets text color */
-           border-radius: 5px;     /* Optional: makes corners rounded */
+           position: absolute; /* Keeps it on top of other elements */
+           top: 10px;          /* Distance from the top */
+           left: 10px;         /* Distance from the left */
+           z-index: 10;        /* Ensures it stays above the image */
+           display: inline-block;
+           padding: 10px 20px;
+           background-color: #ddd;
+           text-decoration: none;
+           color: black;
+          border-radius: 5px;
 }
               
     </style>
-    <a href="optionspick.html" class="back-button">Back</a>
 </head>
 <body>
   <a href="optionspick.html" class="back-button">Back</a>
