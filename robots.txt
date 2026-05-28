@@ -1,5 +1,0 @@
-Sitemap: https://Motion-To-Master-Peace.com/sitemap.xml
-
-
-User-agent: *
-Allow: /
