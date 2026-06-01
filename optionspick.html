@@ -275,18 +275,36 @@
             </ul>
           
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-    <title>HTML dropdown</title>
-</head>
-<body>
-    <select>
-        <option value="volvo">MERN</option>
-        <option value="saab" selected>DevOps</option>
-        <option value="mercedes">AI/ML</option>
-        <option value="audi">Data Science</option>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dropdown</title>
+    <style>
+        /* This targets your dropdown box */
+        .large-dropdown {
+            font-size: 18px;       /* Makes the text larger */
+            padding: 10px 15px;    /* Adds space inside: 10px top/bottom, 15px left/right */
+            width: 250px;          /* Sets a wider, fixed width */
+            border-radius: 6px;    /* Rounds the corners slightly for a modern look */
+            border: 2px solid #ccc;/* Gives it a nice, defined border */
+            cursor: pointer;       /* Changes the mouse cursor when hovering over it */
+        }
+
+        /* Optional: Makes the label text larger to match */
+        .dropdown-label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;        /* Puts the label on its own line above the dropdown */
+            margin-bottom: 8px;    /* Adds space between label and dropdown */
+        }
+    </style>
+
+    <label for="tech-stack" class="dropdown-label">Choose a path:</label>
+    
+    <select id="tech-stack" name="tech-stack" class="large-dropdown">
+        <option value="mern">MERN</option>
+        <option value="devops" selected>DevOps</option>
+        <option value="aiml">AI/ML</option>
+        <option value="data-science">Data Science</option>
     </select>
-</body>
 
          
         </div>
