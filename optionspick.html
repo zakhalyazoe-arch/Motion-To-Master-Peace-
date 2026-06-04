@@ -233,6 +233,25 @@
             display: table;
             clear: both;
         }
+
+
+     /* Pushes the dropdown to the line below the label text */
+        .movie-label {
+           display: block;
+           font-size: 18px;      /* Makes the label text a bit larger */
+           font-weight: bold;
+           margin-bottom: 10px;  /* Adds some space between text and dropdown */
+}
+
+/* Makes the dropdown box larger and styled */
+       .large-dropdown {
+           font-size: 18px;       /* Bigger text inside the dropdown */
+           padding: 12px 20px;    /* Extra breathing room inside the box */
+           width: 280px;          /* Sets a nice wide size */
+           border: 2px solid #333;/* Crisp border */
+           border-radius: 6px;    /* Slightly rounded corners */
+           cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -299,17 +318,15 @@
 
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
 
 
-    <label for="movie-select">More Movies and shows:</label>
-    
-    <select id="movie-select" onchange="window.location.href=this.value;">
-        <option value="" selected disabled>Select a movie...</option>
-        
-        <option value="mazerunner.html">Maze Runner</option>
-        <option value="         .html">Coming Soon...</option>
-    </select>
+  <label for="movie-select" class="movie-label">More Movies and shows:</label>
+
+<select id="movie-select" class="large-dropdown" onchange="window.location.href=this.value;">
+    <option value="" selected disabled>Select a movie...</option>
+    <option value="mazerunner.html">Maze Runner</option>
+    <option value="comingsoon.html">Coming Soon...</option>
+</select>
 
 
          
