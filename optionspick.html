@@ -297,14 +297,20 @@
         }
     </style>
 
-    <label for="tech-stack" class="dropdown-label"> More Movies and shows</label>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+
+
+    <label for="movie-select">More Movies and shows:</label>
     
-    <select id="tech-stack" name="tech-stack" class="large-dropdown"> 
-        <option class="movie-list-item"> Maze Runner</option>      
-        <option value="devops" selected>Coming soon!</option>
-        <option value="aiml">Coming soon!</option>
-        <option value="data-science">Coming soon!</option>
+    <select id="movie-select" onchange="window.location.href=this.value;">
+        <option value="" selected disabled>Select a movie...</option>
+        
+        <option value="mazerunner.html">Maze Runner</option>
+        <option value="         .html">Coming Soon...</option>
     </select>
+
 
          
         </div>
